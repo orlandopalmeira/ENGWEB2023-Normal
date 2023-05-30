@@ -1,0 +1,69 @@
+1.1 Setup
+    Alterações de nomes de campos:
+        Id -> _id
+        Número de Registo -> Num_registo
+        Código de rua -> Codigo_rua
+        Nome Científico -> Nome_cientifico
+        Data de Plantação -> Data_plantacao
+        Data de actualização -> Data_actualizacao
+        Número de intervenções -> Num_intervencoes
+
+    Comando para importar para o mongodb: mongoimport -d plantas -c plantas --file plantas.json --jsonArray
+
+1.2 Queries (warm-up)
+    . Quantos registos estão na base de dados;
+        R: db.plantas.find().count()
+    . Quantos registos de plantação se encontram na freguesia "São Domingos de Rana"?
+        R: db.plantas.find({"Freguesia": "São Domingos de Rana"}).count()
+    . Qual a lista de freguesias (ordenada alfabeticamente e sem repetições)?
+        db.plantas.aggregate([{
+            $group: {
+            _id: "$Freguesia",
+            count: {
+                $sum: 1
+            }
+            }
+        },{
+            $sort: {
+            "_id": 1
+            }
+        },{
+            $project: {
+            count: 0
+            }
+        }])
+    . Qual a distribuição dos registos por freguesia (quantos registos em cada freguesia)
+        db.plantas.aggregate([{
+            $group: {
+            _id: "$Freguesia",
+            count: {
+                $sum: 1
+            }
+            }
+        }])
+    . Qual a distribuição dos registos por espécie?
+        db.plantas.aggregate([{
+            $group: {
+            _id: "$Espécie",
+            count: {
+                $sum: 1
+            }
+            }
+        }])
+
+1.3 API de dados
+    1) Execução do comando: npx express-generator --no-view
+    2) Execução do comando: npm i mongoose --save
+    Instrução para iniciar a API de dados:
+        1) Ir para a directoria "ex1"
+        2) Executar o comando "npm start"
+        3) A API estará a funcionar na porta 15030
+    
+2: Plantas (Interface)
+    1) Execução do comando: npx express-generator --view=pug
+    2) Execução do comando: npm i axios --save
+    Instrução para iniciar a Interface:
+        1) Ir para a directoria "ex2"
+        2) Executar o comando "npm start"
+        3) A interface estará a funcionar na porta 15031
+

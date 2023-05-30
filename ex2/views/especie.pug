@@ -1,0 +1,37 @@
+extends layout
+
+block content
+  .w3-card-4
+    header.w3-container.w3-blue
+      h1 Espécie: #{especie} [#[a(href="/") Página principal]]
+      h4 Número de registos desta espécie: #{n_registos}
+
+    .w3-container
+      .w3-container.w3-margin-top.w3-margin-bottom
+        table.w3-table-all
+          tr
+            th.w3-blue(style="width: 400px") Espécie
+            td= especie 
+          tr 
+            th.w3-blue(style="width: 400px") Nome científico
+            td= nomeCientifico
+
+      table.w3-table-all
+        tr
+          th.w3-blue ID
+          th.w3-blue Freguesia
+          th.w3-blue Espécie
+          th.w3-blue Estado
+          th.w3-blue Número de intervenções
+        each planta in plantas
+          tr
+            td 
+              a(href="/" + planta._id)= planta._id
+            td= planta.Freguesia
+            td 
+              a(href= "/especies/" + planta.Espécie)= planta.Espécie
+            td= planta.Estado
+            td= planta.Num_intervencoes
+
+    footer.w3-container.w3-blue.w3-center
+      h5 Orlando Palmeira - A97755 - LEI
