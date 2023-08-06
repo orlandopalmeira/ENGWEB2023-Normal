@@ -165,10 +165,10 @@ Now, develop a data API that responds on **port 15030** and answers the followin
 
 * `GET /plantas`: returns a list with all records;
 * `GET /plantas/:id`: returns the record with identifier `id`;
-* `GET /plantas?species=EEEE`: returns the list of records corresponding to species `EEEE`;
-* `GET /plantas?implementation=AAA`: returns the list of records with implementation `AAA`;
-* `GET /plantas/parishes`: returns the list of parishes in alphabetical order and without repetitions;
-* `GET /plantas/species`: returns the list of plant species in alphabetical order and without repetitions;
+* `GET /plantas?especie=EEEE`: returns the list of records corresponding to species `EEEE`;
+* `GET /plantas?implant=AAA`: returns the list of records with implementation `AAA`;
+* `GET /plantas/freguesias`: returns the list of parishes in alphabetical order and without repetitions;
+* `GET /plantas/especies`: returns the list of plant species in alphabetical order and without repetitions;
 * `POST /plantas`: adds a new record to the database;
 * `DELETE /plantas/:id`: deletes the record with identifier `id` from the database.
 
