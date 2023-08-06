@@ -1,4 +1,4 @@
-**Versão em Português** 🇵🇹 [English version below](#engVersion)
+**Versão em Português** 🇵🇹 English version below
 ## 30 de Maio de 2023
 ### Licenciatura em Engenharia Informática (3.º ano), Universidade do Minho
 ## Sinopse
@@ -95,7 +95,7 @@ Tendo a API desenvolvida, desenvolve agora um novo serviço, que responde na **p
     * Na página de cada espécie deverá constar o nome e a designação científica da espécie e uma tabela com a lista de registos dessa espécie (tabela com estrutura semelhante à da página principal).
   
 
-<a id="engVersion"></a> **English version** :uk:
+**English version** :uk:
 
 ## 30th May 2023
 ### Bachelor's Degree in Computer Engineering (3rd year), University of Minho
