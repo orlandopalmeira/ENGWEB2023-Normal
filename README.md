@@ -1,5 +1,4 @@
-**Versão em Português** 🇵🇹 [English version](/#english-version)
-
+**Versão em Português** 🇵🇹 [English version below](#engVersion)
 ## 30 de Maio de 2023
 ### Licenciatura em Engenharia Informática (3.º ano), Universidade do Minho
 ## Sinopse
@@ -95,8 +94,8 @@ Tendo a API desenvolvida, desenvolve agora um novo serviço, que responde na **p
 3. Se colocares no browser o endereço `http://localhost:15031/especies/:id` deverás obter a página da espécie cujo nome corresponde ao parâmetro passado na rota (como fazes a associação do parâmetro à espécie é contigo, usa a imaginação):
     * Na página de cada espécie deverá constar o nome e a designação científica da espécie e uma tabela com a lista de registos dessa espécie (tabela com estrutura semelhante à da página principal).
   
-<!-- english-version -->
-**English version** :uk:
+
+<a name="engVersion"></a> **English version** :uk:
 
 ## 30th May 2023
 ### Bachelor's Degree in Computer Engineering (3rd year), University of Minho
