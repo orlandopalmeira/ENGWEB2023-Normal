@@ -98,7 +98,7 @@ Tendo a API desenvolvida, desenvolve agora um novo serviço, que responde na **p
 **English version** :uk:
 
 ## 30th May 2023
-### Bachelor's Degree in Computer Engineering (3rd year), University of Minho
+### Bachelor's Degree in Informatics Engineering (3rd year), University of Minho
 ## Synopsis
 
 The main objective of this test is to evaluate the knowledge acquired during the classes in web application development and related tasks.
