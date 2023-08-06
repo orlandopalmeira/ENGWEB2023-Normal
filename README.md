@@ -181,7 +181,7 @@ With the developed API, create a new service that responds on **port 15031** and
     * A header with metadata of your choice;
     * A table containing the list of records, one per row, with the fields: `_id`, `Freguesia`, `Espécie`, `Estado`, and `Número de intervenções`;
     * The field `_id` should be a link that leads to the detailed information of the corresponding record.
-2. If you enter the address `http://localhost:15031/:id` in the browser, you should get the registration page with the identifier passed in the route:
+2. If you enter the address `http://localhost:15031/:id` in the browser, you should get the page of the record whose identifier is passed in the route:
     - This page should contain all the fields of the registration and a link to return to the home page.
 
 3. If you enter the address `http://localhost:15031/especies/:id` in the browser, you should get the page of the species whose name corresponds to the parameter passed in the route (how you associate the parameter with the species is up to you, use your imagination):
